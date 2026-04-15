@@ -1,5 +1,4 @@
 import Sections from '@/app/home/Sections';
-import DownloadCVButton from '@/app/home/DownloadCVButton';
 import Image from 'next/image';
 import PageLayout from '@/app/components/page/PageLayout';
 import grain from '@/app/assets/home/grain.webp';
@@ -50,9 +49,6 @@ export default function Home() {
       <div className="min-h-dvh pb-5">
         <div className="md:pt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 mb-24 gap-y-8 lg:gap-y-0">
           <Sections></Sections>
-        </div>
-        <div className="flex justify-center">
-          <DownloadCVButton></DownloadCVButton>
         </div>
       </div>
     </PageLayout>
