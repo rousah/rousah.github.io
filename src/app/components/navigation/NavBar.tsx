@@ -33,7 +33,7 @@ export default function NavBar(props: Props) {
     <nav className={`flex items-center justify-between flex-wrap bg-${color}`}>
       <div className="block lg:hidden">
         <button
-          className="flex items-center rounded hover:text-white hover:border-white"
+          className="flex items-center rounded-sm hover:text-white hover:border-white"
           onClick={toggleMenu}
         >
           <svg
@@ -56,11 +56,11 @@ export default function NavBar(props: Props) {
       </div>
       <div
         ref={menuRef}
-        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-sm nav-menu ${
+        className={`w-full block grow lg:flex lg:items-center lg:w-auto text-sm nav-menu ${
           isMenuOpen ? 'open' : ''
         }`}
       >
-        <div className="lg:flex-grow">
+        <div className="lg:grow">
           <Link href="/" className="block mt-4 lg:inline-block lg:mt-0 mr-4">
             Home
           </Link>

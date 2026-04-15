@@ -18,12 +18,12 @@ export default function Polaroid(props: Props) {
   return (
     <Link href={props.href} className="flex flex-col">
       <div
-        className={`${borderClassNames} border-[24px] grow flex items-center`}
+        className={`${borderClassNames} border-24 grow flex items-center`}
       >
         <AnimatedImage src={props.image} />
       </div>
       <div
-        className={`${borderClassNames} border-b-[24px] bg-${props.color} px-[24px] text-right text-2xl md:text-4xl`}
+        className={`${borderClassNames} border-b-24 bg-${props.color} px-[24px] text-right text-2xl md:text-4xl`}
       >
         {props.title}
       </div>
